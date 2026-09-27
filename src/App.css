@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f4e79, #4f81bd);
+  padding: 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h1 {
+  color: #1f4e79;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.login-box p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.login-box h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #1f4e79;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #163a5c;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAIN APP
+========================= */
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  background: #1f4e79;
+  color: white;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+.logout-button {
+  background: white;
+  color: #1f4e79;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #e9eef5;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+main > h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f4e79;
+}
+
+
+/* =========================
+   ISSUE CARDS
+========================= */
+
+.issue-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.issue-card {
+  background: white;
+  padding: 35px 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.issue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   ISSUE FORM
+========================= */
+
+.issue-form {
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.issue-form h2 {
+  color: #1f4e79;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.issue-form label,
+.admin-item label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.issue-form textarea,
+.issue-form input,
+.issue-form select,
+.admin-item select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.issue-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.issue-form button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  background: #1f4e79;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.issue-form button:hover {
+  background: #163a5c;
+}
+
+
+/* =========================
+   ISSUE DASHBOARD
+========================= */
+
+.dashboard {
+  margin-top: 50px;
+}
+
+.dashboard h2,
+.admin-dashboard h2,
+.staff-dashboard h2 {
+  color: #1f4e79;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.issue-list {
+  display: grid;
+  gap: 20px;
+}
+
+.issue-item {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #1f4e79;
+}
+
+.issue-item h3 {
+  color: #1f4e79;
+  margin-bottom: 15px;
+}
+
+.issue-item p {
+  margin: 8px 0;
+}
+
+
+/* =========================
+   ADMIN DASHBOARD
+========================= */
+
+.admin-dashboard {
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.admin-list {
+  display: grid;
+  gap: 20px;
+}
+
+.admin-item {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.admin-item h3 {
+  color: #1f4e79;
+  margin-bottom: 15px;
+}
+
+.admin-item p {
+  margin: 8px 0;
+}
+
+.admin-item select {
+  margin-bottom: 10px;
+}
+
+
+/* =========================
+   STAFF DASHBOARD
+========================= */
+
+.staff-dashboard {
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.staff-selector {
+  background: white;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.staff-selector label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.staff-selector select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.staff-dashboard > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.staff-list {
+  display: grid;
+  gap: 20px;
+}
+
+.staff-item {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #1f4e79;
+}
+
+.staff-item h3 {
+  color: #1f4e79;
+  margin-bottom: 15px;
+}
+
+.staff-item p {
+  margin: 8px 0;
+}
+
+.staff-item button {
+  margin-top: 15px;
+  padding: 11px 18px;
+  background: #1f4e79;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.staff-item button:hover {
+  background: #163a5c;
+}
+
+
+/* =========================
+   NO ISSUES
+========================= */
+
+.no-issues {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  main {
+    padding: 20px;
+  }
+
+  header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  .issue-container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-box h1 {
+    font-size: 25px;
+  }
+}
